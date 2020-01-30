@@ -16,8 +16,13 @@ int main()
 	int x = 50;
 	int y = 100;
 
+	cout << "The old value of x is " << x << endl;
+	cout << "The old value of y is " << y << endl;
+
+	cout << "\n You ran exchange() to switch the values of x and y by altering their values directly through pointers \n" << endl;
+
 	exchange(&x, &y);
-	cout << x << endl;
-	cout << y << endl;
+	cout << "The new value of x is " << x << endl;
+	cout << "The new value of y is " << y << endl;
 }
 
