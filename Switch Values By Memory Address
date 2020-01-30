@@ -6,9 +6,9 @@ using namespace std;
 void exchange(int*, int*);
 void exchange(int* x, int* y)
 {
-	int z = (*x);
-	(*x) = (*y);
-	(*y) = z;
+	int z = (*x);			//this declares and initializes a placeholder variable, z, to hold the value at *x
+	(*x) = (*y);			//this assigns the value at *x the value at *y
+	(*y) = z;			//this assigns the value at *y the value assigned to variable z
 }
 
 int main()
