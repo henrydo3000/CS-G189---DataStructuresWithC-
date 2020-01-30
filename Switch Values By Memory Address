@@ -1,0 +1,23 @@
+//This program will switch the values of x and y by directly changing their values using their memory addresses as arguments.
+
+#include <iostream>
+using namespace std;
+
+void exchange(int*, int*);
+void exchange(int* x, int* y)
+{
+	int z = (*x);
+	(*x) = (*y);
+	(*y) = z;
+}
+
+int main()
+{
+	int x = 50;
+	int y = 100;
+
+	exchange(&x, &y);
+	cout << x << endl;
+	cout << y << endl;
+}
+
